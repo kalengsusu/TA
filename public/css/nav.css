@@ -1,0 +1,15 @@
+img {
+    width: 70px;
+}
+
+svg {
+    margin-right: 40px;
+}
+
+.collapse {
+    display: flex;
+}
+
+.icon {
+    display: flex;
+}

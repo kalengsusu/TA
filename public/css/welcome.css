@@ -1,0 +1,111 @@
+a {
+    text-decoration: none; /* Menghilangkan garis bawah */
+    color: #000000; /* Warna merah yang serasi */
+    margin: 10px; /* Memberi jarak agar terlihat lebih rapi */
+    font-family: Arial, sans-serif;
+}
+
+body {
+    margin: 0px;
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 40px;
+}
+
+header img {
+    width: 100px;
+    padding-top: 15px;
+}
+
+nav {
+    display: flex;
+    padding-top: 15px;
+}
+
+nav p {
+    background-color: rgba(221, 53, 69, 1);
+    padding: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 10px;
+}
+
+nav p:hover {
+    background-color: rgb(140, 20, 32);
+}
+
+.header img {
+    width: 100%;
+    box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.409);
+}
+
+h4 {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    font-weight: 100;
+    padding-top: 50px;
+    padding-bottom: 30px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 30px;
+}
+
+.about {
+    width: 15rem;
+}
+
+.container p {
+    width: 40%;
+    font-size: 20px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 15rem;
+}
+
+.card h5 {
+    text-align: center;
+}
+
+footer {
+    padding-left: 20px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 30px;
+    margin-top: 50px;
+    background-color: rgb(48, 38, 38);
+}
+
+footer p {
+    color: white;
+}
+
+@media screen and (max-width: 476px) {
+    .card {
+        width: 10rem;
+    }
+
+    .container p {
+        font-size: 15px;
+    }
+
+    .about {
+        width: 10rem;
+    }
+}
