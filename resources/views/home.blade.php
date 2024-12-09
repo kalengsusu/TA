@@ -53,38 +53,25 @@
                             @endif
                         @else
                         <div class="icon">
-                            <li>
-                                <a href="">
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-clipboard-check" viewBox="0 0 16 16">
-                                        <path fill-rule="evenodd" d="M10.854 7.146a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7.5 9.793l2.646-2.647a.5.5 0 0 1 .708 0"/>
-                                        <path d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1z"/>
-                                        <path d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0z"/>
+                            <li class="nav">
+                                <a href="/cart">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="" class="bi bi-cart" viewBox="0 0 16 16">
+                                        <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
                                     </svg>
-                                    <p>Pesanan</p>
+                                    <p>Keranjang</p>
                                 </a>
                             </li>
 
 
-
-                            <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
-                                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
-                            </svg>
                             <li class="nav-item dropdown">
-                                <a id="navbarDropdown" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false" v-pre>
+                                <a id="" class="nav-link" href="/profile">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="grey" class="bi bi-person-circle" viewBox="0 0 16 16">
+                                        <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                                        <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+                                    </svg>
                                     {{ Auth::user()->name }}
+
                                 </a>
-
-                                <div class="dropdown-menu dropdown-menu-end" aria-labelledby="navbarDropdown">
-                                    <a class="dropdown-item" href="{{ route('logout') }}"
-                                       onclick="event.preventDefault();
-                                                     document.getElementById('logout-form').submit();">
-                                        {{ __('Logout') }}
-                                    </a>
-
-                                    <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
-                                        @csrf
-                                    </form>
-                                </div>
                             </li>
                         </div>
                         @endguest
@@ -98,41 +85,129 @@
     </div>
     <div class="konten">
         <h4>Produk</h4>
+        <h5 class="container-fluid">Rekomendasi</h5>
         <div class="produk">
             <div class="card-container">
-                <div class="card" style="">
-                    <img src="/images/lemper.png" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Lemper</h5>
-                        <p class="card-text">Pre-order 2 Hari</p>
+                <div class="recom">
+                    <div class="card" style="">
+                        <img src="/images/lemper.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Lemper</h5>
+                            <p class="card-text">Pre-order 2 Hari</p>
+                        </div>
                     </div>
-                </div>
 
-                <div class="card" style="">
-                    <img src="/images/roti_kukus.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Roti Kukus</h5>
-                        <p class="card-text">Pre-order 2 Hari</p>
+                    <div class="card" style="">
+                        <img src="/images/roti_kukus.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Roti Kukus</h5>
+                            <p class="card-text">Pre-order 2 Hari</p>
+                        </div>
                     </div>
-                </div>
 
-                <div class="card" style="">
-                    <img src="/images/lemper.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Lemper</h5>
-                        <p class="card-text">Pre-order 2 Hari</p>
+                    <div class="card" style="">
+                        <img src="/images/risol.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Risoles Mayonaise</h5>
+                            <p class="card-text">Pre-order 2 Hari</p>
+                        </div>
                     </div>
-                </div>
 
-                <div class="card" style="">
-                    <img src="/images/lemper.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <h5 class="card-title">Lemper</h5>
-                        <p class="card-text">Pre-order 2 Hari</p>
+                    <div class="card" style="">
+                        <img src="/images/donat.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Donat</h5>
+                            <p class="card-text">Pre-order 2 Hari</p>
+                        </div>
                     </div>
                 </div>
             </div>
-            <hr>
+
+            <h5 class="container-fluid">Pilihan lainnya</h5 class="container-fluid">
+            <div class="card-container">
+                <div class="more">
+                    <div class="card" style="">
+                        <img src="/images/cum.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Cum-cum</h5>
+                            <p class="card-text">Pre-order 2 Hari</p>
+                        </div>
+                    </div>
+
+                    <div class="card" style="">
+                        <img src="/images/spiku_pandan.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Spiku Pandan</h5>
+                            <p class="card-text">Pre-order 2 Hari</p>
+                        </div>
+                    </div>
+
+                    <div class="card" style="">
+                        <img src="/images/sus.jpeg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Sus Vla</h5>
+                            <p class="card-text">Pre-order 2 Hari</p>
+                        </div>
+                    </div>
+
+                    <div class="card" style="">
+                        <img src="/images/nagasari.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Nagasari</h5>
+                            <p class="card-text">Pre-order 2 Hari</p>
+                        </div>
+                    </div>
+
+                    <div class="card" style="">
+                        <img src="/images/sus-buah.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Sus Buah</h5>
+                            <p class="card-text">Pre-order 2 Hari</p>
+                        </div>
+                    </div>
+
+                    <div class="card" style="">
+                        <img src="/images/gabin.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Gabin Vla</h5>
+                            <p class="card-text">Pre-order 2 Hari</p>
+                        </div>
+                    </div>
+
+                    <div class="card" style="">
+                        <img src="/images/marmer.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Cake Marmer/h5>
+                            <p class="card-text">Pre-order 2 Hari</p>
+                        </div>
+                    </div>
+
+                    <div class="card" style="">
+                        <img src="/images/bolu-pelangi.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Bolu Pelangi</h5>
+                            <p class="card-text">Pre-order 2 Hari</p>
+                        </div>
+                    </div>
+
+                    <div class="card" style="">
+                        <img src="/images/pastel-tutup.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Pastel Tutup</h5>
+                            <p class="card-text">Pre-order 2 Hari</p>
+                        </div>
+                    </div>
+
+                    <div class="card" style="">
+                        <img src="/images/wajik.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Wajik</h5>
+                            <p class="card-text">Pre-order 2 Hari</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </div>
 

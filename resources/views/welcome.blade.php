@@ -59,7 +59,7 @@
                         <div class="container">
                             <p>Website ini menawarkan berbagai macam jajanan pasar yang pastinya memiliki rasa yang nikmat, dengan harga sangat terjangkau. Segera coba dijamin ketagihan.</p>
                             <div class="about" style="">
-                                <img src="/images/about.jpeg" class="card-img-top" alt="...">
+                                <img src="/images/sus.jpeg" class="card-img-top" alt="...">
                             </div>
 
                         </div>
@@ -84,18 +84,18 @@
                                 </div>
 
                                 <div class="card" style="">
-                                    <img src="/images/lemper.jpg" class="card-img-top" alt="...">
+                                    <img src="/images/risol.jpg" class="card-img-top" alt="...">
                                     <div class="card-body">
-                                        <h5 class="card-title">Lemper</h5>
-                                        <p class="card-text">Lemper dengan isian ayam yang sangat gurih dan nikmat.</p>
+                                        <h5 class="card-title">Risoles Mayonaise</h5>
+                                        <p class="card-text">Risoles nikmat dangen isian yang lumer dilidah.</p>
                                     </div>
                                 </div>
 
                                 <div class="card" style="">
-                                    <img src="/images/lemper.jpg" class="card-img-top" alt="...">
+                                    <img src="/images/donat.jpg" class="card-img-top" alt="...">
                                     <div class="card-body">
-                                        <h5 class="card-title">Lemper</h5>
-                                        <p class="card-text">Lemper dengan isian ayam yang sangat gurih dan nikmat.</p>
+                                        <h5 class="card-title">Donat</h5>
+                                        <p class="card-text">Tekstur yang empuk yang dipadukan meses.</p>
                                     </div>
                                 </div>
                             </div>

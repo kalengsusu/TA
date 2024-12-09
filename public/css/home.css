@@ -9,19 +9,31 @@ body {
     text-decoration: none;
 }
 
+.icon li {
+    border-radius: 10px;
+}
+
+.icon .nav a {
+    display: flex;
+}
+
+.icon .nav {
+    margin-right: 15px;
+    padding: 5px;
+}
+
+.icon .nav a svg {
+    margin-right: 5px;
+}
+
 .icon li a {
     color: black;
+    text-decoration: none;
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    padding-right: 40px;
-}
-
-header img {
-    width: 100px;
-    padding-top: 15px;
+.icon li a p {
+    font-size: 13px;
+    padding-top: 3px;
 }
 
 .header img {
@@ -37,29 +49,26 @@ h4 {
     padding-bottom: 30px;
 }
 
-.container {
+.container-fluid {
+    margin-bottom: 30px;
+}
+
+.recom {
     display: flex;
     justify-content: space-around;
+    border: 1px solid #ddd;
+    overflow-x: auto;
 }
 
-.container p {
-    width: 40%;
-    font-size: 20px;
+.recom .card {
+    min-width: 9rem;
 }
-
-/* .produk-list {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-}
-
-.produk-item {
-    text-align: center;
-    background-color: white;
-    border-radius: 8px;
-} */
 
 .card-container {
+    margin-bottom: 50px;
+}
+
+.more {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
@@ -94,11 +103,11 @@ footer p {
 }
 
 @media screen and (max-width: 476px) {
-    .card {
-        width: 10rem;
-    }
-
     .card p {
         font-size: 13px;
+    }
+
+    .more-container .card {
+        width: 9rem;
     }
 }
